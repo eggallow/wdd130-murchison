@@ -17,7 +17,36 @@
         </nav>
     </header>
     <main>
-
+        <div class="tabs">
+            <button class="tablink active" onclick="openTab(event, 'songs')">
+                <h1 class="tab-title">Top Songs</h1>
+            </button>
+            <button class="tablink" onclick="openTab(event, 'pokemon')">
+                <h1 class="tab-title">Favorite Pokemon</h1>
+            </button>
+        </div>
+        <div id="songs" class="tabcontent">
+            
+        </div>
+        <div id="pokemon" class="tabcontent">
+            
+        </div>
+        <!-- JavaScript for the tabs -->
+        <script>
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "grid";
+                evt.currentTarget.className += " active";
+            }
+        </script>
     </main>
     <footer>
         <p>&copy; 2026 | Gideon Murchison Eamon Galloway Matthew Hilton | Final Project</p>
