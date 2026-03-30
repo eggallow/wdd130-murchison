@@ -14,6 +14,15 @@ main {
 
 /* Tabs styles are also inerited from shared.css */
 
+.tabcontent img {
+    grid-column: 1/2;
+    grid-row: 1/10;
+}
+
+.tabcontent :not(img) {
+    grid-column: 2/3;
+}
+
 /* This tab's content should be hidden when the page first loads up */
 #my-family {
     display: none;

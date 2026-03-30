@@ -61,12 +61,3 @@
     z-index: 1;
 }
 
-.tabcontent img {
-    grid-column: 1/2;
-    grid-row: 1/10;
-}
-
-.tabcontent :not(img) {
-    grid-column: 2/3;
-}
-
