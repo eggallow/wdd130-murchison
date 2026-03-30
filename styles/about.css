@@ -12,7 +12,13 @@ main {
     padding: 60px 0;
 }
 
-/* Tabs styles are also inerited from shared.css */
+/* A lot of the tabs styles are also inerited from shared.css */
+
+.tabcontent {
+    display: grid;
+    grid-template-columns: 400px auto;
+    column-gap: 40px;
+}
 
 .tabcontent img {
     grid-column: 1/2;

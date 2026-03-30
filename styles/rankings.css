@@ -11,14 +11,66 @@ main {
     padding: 60px 0;
 }
 
-/* Tabs styles are also inerited from shared.css */
+/* A lot of the tabs styles are also inerited from shared.css */
 
+.page-title {
+    font-family: var(--heading-font);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+.songs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
 
+.song-card {
+    background-color: #AAA;
+    border-radius: 30px;
+    padding: 15px 25px 20px 25px;
+    align-self: stretch;
+}
 
+.song-card h3 {
+    display: inline-block;
+    font-family: var(--heading-font);
+    margin-right: 0.5em;
+}
 
-/* This tab's content should be hidden when the page first loads */
+.song-card h4 {
+    display: inline-block;
+    font-family: var(--heading-font);
+    font-weight: 600;
+}
+
+.song-card img {
+    float: left;
+    width: 90px;
+    aspect-ratio: 1/1;
+    margin: 15px;
+}
+
+.song-card p {
+    /* text-align: justify; */
+    margin-top: 15px;
+}
+
 #pokemon {
+    /* Set display to 'none' initially because this tab's 
+    content should be hidden when the page first loads */
     display: none;
+}
+
+.pokemon-name {
+    font-family: var(--heading-font);
+    font-size: 32px;
+}
+
+.pokemon-text {
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
 }
 
