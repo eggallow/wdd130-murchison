@@ -19,6 +19,54 @@
     margin: 0;
 }
 
+
 /* Header and footer stylings go here */
 
+
+
+
+
+/* Tabs-specific styles for 'about' & 'rankings' pages */
+.tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0 60px;
+}
+
+.tablink {
+    border: 2px solid var(--primary-color);
+    background-color: #999;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    font-family: var(--heading-font);
+    z-index: 2;
+}
+
+.active {
+    background-color: var(--accent-color2);
+    border-bottom: none;
+}
+
+.tabcontent {
+    display: grid;
+    grid-template-columns: 400px auto;
+    column-gap: 40px;
+    background-color: var(--accent-color2);
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    margin-top: -2px;
+    padding: 60px 100px;
+    z-index: 1;
+}
+
+.tabcontent img {
+    grid-column: 1/2;
+    grid-row: 1/10;
+}
+
+.tabcontent :not(img) {
+    grid-column: 2/3;
+}
 

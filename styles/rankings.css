@@ -1,2 +1,24 @@
 @import 'shared.css';
 
+/* Header & footer styles are inherited from shared.css */
+
+body {
+    background-color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+}
+
+main {
+    padding: 60px 0;
+}
+
+/* Tabs styles are also inerited from shared.css */
+
+
+
+
+
+/* This tab's content should be hidden when the page first loads */
+#pokemon {
+    display: none;
+}
+
