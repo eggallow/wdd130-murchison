@@ -35,8 +35,11 @@
 }
 
 .tablink {
-    border: 2px solid var(--primary-color);
-    background-color: #999;
+    border: 2px solid var(--accent-color2);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     padding: 10px 20px;
     display: block;
     text-align: center;
@@ -45,14 +48,14 @@
 }
 
 .active {
-    background-color: var(--accent-color2);
+    background-color: var(--accent-color1);
     border-bottom: none;
 }
 
 .tabcontent {
-    background-color: var(--accent-color2);
-    border-top: 2px solid var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
+    background-color: var(--accent-color1);
+    border-top: 2px solid var(--accent-color2);
+    border-bottom: 2px solid var(--accent-color2);
     margin-top: -2px;
     padding: 60px 100px;
     z-index: 1;

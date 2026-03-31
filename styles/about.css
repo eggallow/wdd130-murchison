@@ -4,7 +4,8 @@
 
 
 body {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-family: var(--paragraph-font);
 }
 
