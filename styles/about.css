@@ -30,6 +30,10 @@ main {
     grid-column: 2/3;
 }
 
+.tabcontent p {
+    margin: 10px 0;
+}
+
 /* This tab's content should be hidden when the page first loads up */
 #my-family {
     display: none;
