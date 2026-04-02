@@ -54,7 +54,8 @@ main {
 }
 
 .song-card p {
-    /* text-align: justify; */
+    font-size: 0.85em;
+    text-align: justify;
     margin-top: 15px;
 }
 
@@ -82,7 +83,13 @@ main {
     float: left;
 }
 
-.pokemon-text {
+.stats {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.dex-entry {
     font-size: 20px;
     text-align: justify;
 }
