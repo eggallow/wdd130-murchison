@@ -1,0 +1,63 @@
+/* Import Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #FFF;
+    --accent-color1: #333;
+    --accent-color2: #CCC;
+
+    --title-font: 'Birthstone', 'Times New Roman', serif;
+    --heading-font: 'Montserrat', Helvetica, sans-serif;
+    --paragraph-font: 'Open sans', Helvetica, sans-serif;
+}
+
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Header and footer stylings go here */
+
+
+
+
+
+/* Tabs-specific styles for 'about' & 'rankings' pages */
+.tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0 60px;
+}
+
+.tablink {
+    border: 2px solid var(--accent-color2);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    font-family: var(--heading-font);
+    z-index: 2;
+}
+
+.active {
+    background-color: var(--accent-color1);
+    border-bottom: none;
+}
+
+.tabcontent {
+    background-color: var(--accent-color1);
+    border-top: 2px solid var(--accent-color2);
+    border-bottom: 2px solid var(--accent-color2);
+    margin-top: -2px;
+    padding: 60px 100px;
+    z-index: 1;
+}
+

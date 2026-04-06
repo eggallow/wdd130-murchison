@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Iris - Gideon</title>
+    <link rel="stylesheet" href="styles/about.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="images/iris.png" alt="Iris Project Logo" class="logo">
+            </div>
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">All About Me</a>
+                <a href="rankings.html">The Rankings</a>
+        </nav>
+    </header>
+    <main>
+        <div class="tabs">
+            <button class="tablink active" onclick="openTab(event, 'personal-background')">
+                <h1 class="tab-title">Personal Backround</h1>
+            </button>
+            <button class="tablink" onclick="openTab(event, 'my-family')">
+                <h1 class="tab-title">My Family</h1>
+            </button>
+        </div>
+        <div id="personal-background" class="tabcontent">
+            <img src="images/gideon.jpg" alt="Picture of me">
+            <h2 class="page-title">Gideon Murchison</h2>
+            <p>I was born and raised in Clovis, California and I spent most of my life there. After 
+            I graduated from high school, I moved to Northern Guatemala to serve a two-year 
+            full-time mission for the Church of Jesus Christ of Latter-day Saints. I came home 
+            in 2024 and now I live in Rexburg, Idaho, where I'm at Brigham Young 
+            University - Idaho</p>
+            <p>For far, just that high school diploma… but not to worry! I'm a junior in college 
+            so next year I'll hopefully have a bachelor's in finance. </p>
+            <p>I got a lot of goals, and they all fit into the spiritual, social, intellectual, and 
+            physical categories. I really enjoy learning languages! I've learned Spanish, 
+            K'ek'chi, and French during my mission and time here in college. I'm also a 
+            pianist! I've played since I was very little, and I've only kept getting better and 
+            better and I'm able to play a lot of pretty tough pieces. I got a lot of things I'm 
+            working on hope to continue to become something better and better. </p>
+        </div>
+        <div id="my-family" class="tabcontent">
+            <img src="images/gideon-family.jpg" alt="Picture of my family">
+            <p>My family is amazing! There's seven of us in our family that started in 2003 
+            when my parents were married, and I was born. David and Olinda met in Peru 
+            when my dad went on a trip there to do some solo traveling, which didn't end up 
+            being that solo… anyways they've been married for over 22 years now!</p>
+            <p>There're kids with me being the oldest. My younger brother, Ammon, is only a 
+            year or so younger than I. He served a mission in southern Mexico and came 
+            home in 2024. My sister Sasha graduated high school in 2025 and started her 
+            studies at BYU that fall. She's a pretty sharp girl with a knack for robotics. My 
+            younger sister Bella is still in high school and she's lovely. She's kind and is 
+            super easy to be friends with. Sam is the youngest, man he's a lot different from 
+            what I remember. He's really strong and he's a great wrestler. He's definitely in a 
+            very stereotypical boy teen phase but he's a lot of fun still.</p>
+        </div>
+        <!-- JavaScript for the tabs -->
+        <script>
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "grid";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+    </main>
+    <footer>
+        <p>&copy; 2026 | Gideon Murchison Eamon Galloway Matthew Hilton | Final Project</p>
+    </footer>
+</body>
+</html>

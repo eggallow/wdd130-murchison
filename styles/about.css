@@ -1,0 +1,40 @@
+@import 'shared.css';
+
+/* Header & footer styles are inherited from shared.css */
+
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+}
+
+main {
+    padding: 60px 0;
+}
+
+/* A lot of the tabs styles are also inerited from shared.css */
+
+.tabcontent {
+    display: grid;
+    grid-template-columns: 300px auto;
+    column-gap: 40px;
+}
+
+.tabcontent img {
+    grid-column: 1/2;
+    grid-row: 1/10;
+}
+
+.tabcontent :not(img) {
+    grid-column: 2/3;
+}
+
+.tabcontent p {
+    margin: 10px 0;
+}
+
+/* This tab's content should be hidden when the page first loads up */
+#my-family {
+    display: none;
+}

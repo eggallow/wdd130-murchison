@@ -1,0 +1,96 @@
+@import 'shared.css';
+
+/* Header & footer styles are inherited from shared.css */
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+}
+
+main {
+    padding: 60px 0;
+}
+
+/* A lot of the tabs styles are also inerited from shared.css */
+
+.page-title {
+    font-family: var(--heading-font);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.songs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.song-card {
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 15px 25px 20px 25px;
+    align-self: stretch;
+}
+
+.song-card h3 {
+    display: inline-block;
+    font-family: var(--heading-font);
+    margin-right: 0.5em;
+}
+
+.song-card h4 {
+    display: inline-block;
+    font-family: var(--heading-font);
+    font-weight: 600;
+}
+
+.song-card img {
+    float: left;
+    width: 90px;
+    aspect-ratio: 1/1;
+    margin: 15px;
+}
+
+.song-card p {
+    font-size: 0.85em;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+#pokemon {
+    /* Set display to 'none' initially because this tab's 
+    content should be hidden when the page first loads */
+    display: none;
+}
+
+.pokemon-listing {
+    clear: both;
+}
+
+.pokemon-name {
+    font-family: var(--heading-font);
+    font-size: 32px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.pokemon-img {
+    margin: 0 10px 10px 0;
+    float: left;
+}
+
+.stats {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.dex-entry {
+    font-size: 20px;
+    text-align: justify;
+}
+
